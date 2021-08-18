@@ -1,12 +1,18 @@
-import React from 'react';
-
-const Header = (title, content) => {
+import React, { Component } from 'react';
+export default class App extends Component {
+  render() {
     return (
-        <div className = "header">
-          <h1>Bottega Madlibs</h1>
-          <p>Fill out the fills below and click the generate button to see the Mad Lib story.</p>
+      <div>
+        <h1>Bottega Mad Libs</h1>
+        <div className="backgroundSkew">
+          <div className="madlib-heading">
+            <h1>Bottega Mad Libs</h1>  
+            <div className="madlib-subheading">
+              Fill out the fields below and click the generate button<br/>to see the Mad Lib story.
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    );
+  }
 }
-
-export default Header;
